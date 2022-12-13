@@ -7,9 +7,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/mystyle_edit.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 <style type="text/css">
 <!--
 a:link {color: SteelBlue; text-decoration: none; }
@@ -33,24 +44,33 @@ a:hover {color: SteelBlue; text-decoration: underline; }
       <a href="publications.html" class="w3-bar-item w3-button"> Publications</a>
       <a href="blogs.html" class="w3-bar-item w3-button">Blogs</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
+	
+<!-- Top Navigation Menu -->
+<div class="topnav w3-hide-large w3-hide-medium">
+  <a href="about.html" class="active w3-text-black">Home</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="research.html">Research</a>
+	<a href="publications.html"> Publications</a>
+    <a href="blogs.html">Blogs</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-
+<!-- Sidebar on small screens when clicking the menu icon 
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
    <a href="research.html" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button">Publications</a>
    <a href="blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">Blogs</a>
-  </nav>
-
-	 
+  </nav> -->
  </header>
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1000px;">
