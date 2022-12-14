@@ -290,6 +290,14 @@ img {
 a {
     color: inherit;
 }
+
+.image-txt-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
 .w3-table,
 .w3-table-all {
     border-collapse: collapse;
