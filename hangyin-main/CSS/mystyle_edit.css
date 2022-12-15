@@ -50,6 +50,7 @@ template {
 }
 a {
     background-color: transparent;
+    word-wrap:break-word;
 }
 a:active,
 a:hover {
