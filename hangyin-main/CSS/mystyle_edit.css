@@ -78,10 +78,12 @@ small {
 }
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
+    font-size: 55%;
+    line-height: 1.35em;
     position: relative;
-    vertical-align: baseline;
+    display: inline-block;
+    margin: -9em 0;
+    vertical-align: 0.30em;
 }
 sub {
     bottom: -0.25em;
@@ -296,6 +298,19 @@ a {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+/* chemical formula*/
+.nobr {
+   white-space: nowrap;
+}
+.supsub {
+   display: inline-block;
+   margin: -9em 0;
+   vertical-align: -0.55em;
+   line-height: 1.35em;
+   font-size: 55%;
+   text-align: left;
 }
 
 
